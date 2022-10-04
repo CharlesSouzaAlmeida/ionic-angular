@@ -16,6 +16,13 @@
   Não existem cursos para serem listados.
 </div>
 
-
 <br>
 <button (click)="onMostrar()">Mostra ou esconder cursos</button>
+
+<h5>hiden como alternativa</h5>
+<div [hidden]="!mostraCursos">
+  Lista de cursos aqui.
+</div>
+<div [hidden]="mostrarCursos">
+  Não existem cursos para serem listados.
+</div>

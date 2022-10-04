@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ngif.component.scss'],
 })
 export class NgifComponent implements OnInit {
-  cursos: any[] = ['Angular', 'JavaScript'];
+  cursos: string[] = ['Angular'];
 
   mostrarCursos: Boolean = false;
 

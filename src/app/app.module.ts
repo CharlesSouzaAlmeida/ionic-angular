@@ -7,9 +7,16 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NgifComponent } from './ngif/ngif.component';
+import { NgifcontatosComponent } from './ngifcontatos/ngifcontatos.component';
+import { NgforComponent } from './ngfor/ngfor.component';
 
 @NgModule({
-  declarations: [AppComponent, NgifComponent],
+  declarations: [
+    AppComponent,
+    NgifComponent,
+    NgifcontatosComponent,
+    NgforComponent,
+  ],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
