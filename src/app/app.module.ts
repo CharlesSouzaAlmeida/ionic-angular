@@ -10,7 +10,6 @@ import { NgifComponent } from './ngif/ngif.component';
 import { NgifcontatosComponent } from './ngifcontatos/ngifcontatos.component';
 import { NgforComponent } from './ngfor/ngfor.component';
 import { CursosModule } from './cursos/cursos.module';
-import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ import { routing } from './app.routing';
     IonicModule.forRoot(),
     AppRoutingModule,
     CursosModule,
-    routing,
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

@@ -1,11 +1,31 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { CursosComponent } from './cursos/cursos.component';
+import { NgforComponent } from './ngfor/ngfor.component';
+import { NgifComponent } from './ngif/ngif.component';
+import { NgifcontatosComponent } from './ngifcontatos/ngifcontatos.component';
 
 const routes: Routes = [
   {
     path: 'home',
     loadChildren: () =>
       import('./home/home.module').then((m) => m.HomePageModule),
+  },
+  {
+    path: 'ngfor',
+    component: NgforComponent,
+  },
+  {
+    path: 'ngif',
+    component: NgifComponent,
+  },
+  {
+    path: 'ngifcontatos',
+    component: NgifcontatosComponent,
+  },
+  {
+    path: 'cursos',
+    component: CursosComponent,
   },
   {
     path: '',
