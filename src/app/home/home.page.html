@@ -7,18 +7,22 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <a routerLink="/ngfor">ngFor</a>
-  <br>
-  <a routerLink="/ngif">ngIF</a>
-  <br>
-  <a routerLink="/ngifcontatos">ngIfcontatos</a>
-
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
 
-
+  <ion-button color="primary" routerLink="/ngfor">ngFor</ion-button>
+  <br>
+  <ion-button color="success" (click)="pagNgfor()">ngFor</ion-button>
+  <br>
+  <ion-button color="secondary" routerLink="/ngif">ngIf</ion-button>
+  <br>
+  <ion-button color="success" (click)="pagNgif()">ngIf</ion-button>
+  <br>
+  <ion-button color="tertiary" routerLink="/ngifcontatos">ngIfContatos</ion-button>
+  <br>
+  <ion-button color="success" (click)="pagNgifContac()">ngIfContatos</ion-button>
 
 </ion-content>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  constructor() {}
+  constructor(public router: Router) {}
+
+  pagNgif() {
+    console.log('Acesso minha rota ngIf');
+    this.router.navigate(['/ngif']);
+  }
+  pagNgfor() {
+    console.log('Acessando minha rota ngfor');
+    this.router.navigate(['/ngfor']);
+  }
+  pagNgifContac() {
+    this.router.navigate(['/ngifcontatos']);
+  }
 }
