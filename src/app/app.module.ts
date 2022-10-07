@@ -10,6 +10,7 @@ import { NgifComponent } from './ngif/ngif.component';
 import { NgifcontatosComponent } from './ngifcontatos/ngifcontatos.component';
 import { NgforComponent } from './ngfor/ngfor.component';
 import { CursosModule } from './cursos/cursos.module';
+import { FirstComponentComponent } from './components/first-component/first-component.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { CursosModule } from './cursos/cursos.module';
     NgifComponent,
     NgifcontatosComponent,
     NgforComponent,
+    FirstComponentComponent,
   ],
   imports: [
     BrowserModule,
